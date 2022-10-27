@@ -1,0 +1,5 @@
+note over selain:
+Selain renderöi uuden muistiinpanon listaan
+end note
+selain->palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+palvelin-->selain: 201 created
