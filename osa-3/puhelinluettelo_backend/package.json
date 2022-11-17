@@ -1,0 +1,37 @@
+{
+  "name": "fso-puhelinluettelo-backend",
+  "version": "1.0.0",
+  "description": "NodeJS backend full stack open puhelinluettelolle",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "build:ui": "rm -rf build && cd ../../osa-2/puhelinluettelo && npm run build && cp -r build ../../osa-3/puhelinluettelo_backend",
+    "deploy": "fly deploy",
+    "deploy:full": "npm run build:ui && npm run deploy",
+    "logs:prod": "fly logs",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-Hannonen/fso-puhelinluettelo-backend.git"
+  },
+  "author": "Onnimanni Hannonen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-Hannonen/fso-puhelinluettelo-backend/issues"
+  },
+  "homepage": "https://github.com/O-Hannonen/fso-puhelinluettelo-backend#readme",
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2",
+    "morgan": "^1.10.0"
+  }
+}

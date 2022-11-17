@@ -1,0 +1,4 @@
+// GET http://localhost:3001/persons
+
+
+GET https://fso-puhelinluettelo.fly.dev/persons
