@@ -1,0 +1,10 @@
+POST http://localhost:8080/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Title of the blog",
+  "author": "Pekka",
+  "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiSrp6AqLf7AhXo-yoKHXPqC2YQwqsBegQIDxAB&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU",
+  "likes": 420,
+  "userId": "637b6aa0852c82cac32448b3"
+}

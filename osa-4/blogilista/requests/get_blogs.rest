@@ -1,0 +1,2 @@
+GET http://localhost:8080/api/blogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwiaWQiOiI2MzdiNmFhMDg1MmM4MmNhYzMyNDQ4YjMiLCJpYXQiOjE2NjkwMzUwMDl9.cD0cBKyMapqqI1y1x_ZuBCvUSOOGyevEbqr1J53fqtg
