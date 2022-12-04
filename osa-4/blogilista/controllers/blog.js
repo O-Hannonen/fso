@@ -43,11 +43,6 @@ blogsRouter.put('/:id', async (request, response) => {
     user: request.user.id,
   };
   const blog = await Blog.findById(id);
-  if (blog.user.toString() !== request.user.id.toString()) {
-    return response.status(401).json({
-      error: 'only the user who created the blog can delete it',
-    });
-  }
   await blog.updateOne(blogData, { new: true });
   const output = await Blog.findById(id);
   response.status(200).json(output);
